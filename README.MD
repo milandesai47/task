@@ -24,8 +24,8 @@ mvn 3.6.X+
 junit5
 
 ## Algorithm and Psuedo code
-- The method will loop through each probability comparing with randomValue.
-- Accumulating probabilities until it's higher than randomValue, if total probability is higher than randomValue than return the number.
+- The method nextNum() will loop through each probability comparing with randomValue.
+- Accumulating probabilities until it's higher than randomValue, if total probability is higher than randomValue than return the number at the position of current probability.
 - When the number is returned we'd store it into a counter array (of same size) to keep track how many times number is returned. 
 
 Example representation, 
@@ -40,20 +40,26 @@ Initialise counter [ 0, 0 ] to store number of times 21 or 55 is returned.
 
 N=0
 ![img.png](resources/img.png)
+number : 21 (number[0]) --> `++counter[0]` --> counter = [1, 0]
+
 
 N=1
 ![img_1.png](resources/img_1.png)
+number : 55 (number[1]) --> `++counter[1]` --> counter = [1, 1]
 
 N=2
 ![img_2.png](resources/img_2.png)
+number : 55 (number[1]) --> `++counter[1]` --> counter = [1, 2]
 
 N=3
 ![img_3.png](resources/img_3.png)
+number : 55 (number[1]) --> `++counter[1]` --> counter = [1, 3]
 
 N=4
 ![img_4.png](resources/img_4.png)
+number : 55 (number[1]) --> `++counter[1]` --> counter = [1, 4]
 
-In the end we have `counter` with [1, 4] -> associating with positions of number [21, 55] Psudo code will return
+In the end we have `counter` = [1, 4] -> associating with positions of number [21, 55] Psudo code will return
 ```shell
 21: 1 times
 55: 4 times
