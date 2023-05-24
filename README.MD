@@ -12,6 +12,7 @@ to.
 
 - numbers[] is non-null
 - probabilities[] is non-null
+- length of numbers[] and probabilities[] should be the same
 - Σ[probabilities[]] == 1
 
 ## Java
