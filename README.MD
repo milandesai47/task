@@ -60,7 +60,7 @@ N=4
 ![img_4.png](resources/img_4.png)
 number : 55 (number[1]) --> `++counter[1]` --> counter = [1, 4]
 
-In the end we have `counter` = [1, 4] -> associating with positions of number [21, 55] Psudo code will return
+In the end we have `counter` = [1, 4] -> associating with positions of number [21, 55] Pseudo code will return
 ```shell
 21: 1 times
 55: 4 times
@@ -68,7 +68,8 @@ In the end we have `counter` = [1, 4] -> associating with positions of number [2
 
 
 ## Time complexity
-O(N) as there's 1 loop for N iterations.
+nextNum() : O(N) as there's 1 loop for the length of probability.
+Pseudocode : O(n²) 
 
 ## space complexity
 O(1) as there's no data structure. 
