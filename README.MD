@@ -34,7 +34,7 @@ Let's say we have following,
 
 Numbers         [  21, 55 ]
 
-Probabilities   [ 0.2, 0.5]
+Probabilities   [ 0.2, 0.8 ]
 
 N = 5, that means we'd call nextNum 5 times. 
 Initialise counter [ 0, 0 ] to store number of times 21 or 55 is returned.
