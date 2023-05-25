@@ -26,7 +26,7 @@ junit5
 
 ## Algorithm and Psuedo code
 - The method nextNum() will loop through each probability comparing with randomValue.
-- Accumulating probabilities until it's higher than randomValue, if total probability is higher than randomValue than return the number at the position of current probability.
+- Accumulating probabilities until it's higher than randomValue, if total probability is higher than randomValue, return the number at the position of current probability.
 - When the number is returned we'd store it into a counter array (of same size) to keep track how many times number is returned. 
 
 Example representation, 
