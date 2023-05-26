@@ -10,7 +10,7 @@ public class RandomGen {
   public RandomGen(int[] numbers, float[] probabilities) {
     // validating constraints
     if (numbers.length == 0 || probabilities.length == 0 || numbers.length != probabilities.length) {
-      throw new IllegalArgumentException("Numbers and probabilities must be equal and non-null");
+      throw new IllegalArgumentException("Numbers and probabilities must be of equal size and non-null");
     }
 
     // probabilities should sum up to 1.
