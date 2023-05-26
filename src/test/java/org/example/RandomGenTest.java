@@ -85,7 +85,7 @@ class RandomGenTest {
       RandomGen randomGen = new RandomGen(numbers, probabilities);
     });
 
-    assertTrue(exception.getMessage().contains("Numbers and probabilities must be equal and non-null"));
+    assertTrue(exception.getMessage().contains("Numbers and probabilities must be of equal size and non-null"));
   }
 
   @Test
